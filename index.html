@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content="GCH. Quinteto de rock uruguayo.">
+	<meta name="keywords" content="musica, banda, rock, hard rock, rock alternativo, uruguay">
+	<meta name="author" content="guachouy">
+	<title>GUACHO / SITIO OFICIAL</title>	
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/icons/manifest.json">
+	<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon.ico?v=Om5qJJqGpQ">
+	<meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<!--link rel="icon" href="assets/img/favicon.ico"-->
+	
+	<!-- ========== CSS INCLUDES ========== -->
+	<link rel="stylesheet" href="assets/css/master.css">
+	<!-- ========== GG ========== -->
+	<meta name="google-site-verification" content="N8cZ8JO2IibKrw9BcKbxZ69rbAQWtyCa_njcrFFddBM" />
+	<!-- ========== FIRST JS INCLUDES ========== -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/contact.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script> 
+	
+	 <script>
+		$('#contactform').ajaxForm(function() {});
+	 </script>
+	 
+	 <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-90735775-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+		 
+	 
+	
+</head>
+<body> 
+	<div class="page-loader">
+		 <div class="vertical-align align-center">
+			  <img src="assets/loader/loader.gif" alt="logo-guachouy-cargando-sitio" class="loader-img">
+		 </div>
+	</div>
+
+	<!-- =============== START PLAYER ================ -->
+	<div class="main-music-player">
+		<a class="hide-player-button">
+			<i class="fa fa-plus"></i>
+			<i class="fa fa-minus"></i>
+		</a>
+		<div id="mesh-main-player" class="jp-jplayer" data-audio-src="assets/audio/calendario.mp3" data-title="Calendario" data-artist="Guacho"></div>
+		
+		<div id="mesh-main-player-content" class="mesh-main-player" role="application" aria-label="media player">
+			<div class="container">
+				<div class="row">
+					<div class="left-player-side">
+						<div class="mesh-prev">
+							<i class="fa fa-step-backward"></i>
+						</div>
+						<div class="mesh-play">
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="mesh-pause">
+							<i class="fa fa-pause"></i>
+						</div>
+						<div class="mesh-next">
+							<i class="fa fa-step-forward"></i>
+						</div>
+						<button id="playlist-toggle" class="jplayerButton">
+							<span class="span-1"></span>
+							<span class="span-2"></span>
+							<span class="span-3"></span>
+						</button>
+					</div>
+					<div class="center-side">
+						<div class="mesh-current-time">
+						</div>
+						<div class="mesh-seek-bar">
+							<div class="mesh-play-bar">
+							</div>
+						</div>
+						<div class="mesh-duration">
+						</div>
+					</div>
+					<div class="right-player-side">
+						<div class="mesh-thumbnail">
+							<img src="assets/img/albums/cover3.png" alt="tapa-disco">
+						</div>
+						<div class="mesh-title">
+						</div>
+						<div class="mesh-artist">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYER ================ -->
+	
+	<!-- =============== START PLAYLIST ================ -->
+	<div class="playlist-wrapper" id="playlist-wrapper">
+		<div class="jp-playlist container">
+			<div class="about-list clearfix">
+				<span class="about-name">NOMBRE</span>
+				<span class="about-length">DURACIÓN</span>
+				<span class="about-available">DISPONIBLE EN</span>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/calendario.mp3" data-artist="Guacho" data-thumbnail="assets/img/albums/calendario-single.png" data-id="trak-0">
+				<audio preload="metadata" src="assets/audio/calendario.mp3" title="Calendario"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a class="icon-button shopIcon" href="https://www.youtube.com/guachouy" target="_blank">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://soundcloud.com/guachouy" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://open.spotify.com/artist/2IZAYXQhrYf47pgzTH9ukY" target="_blank">
+							<i class="fa fa-spotify"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Calendario - Guacho
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/aprendiz.mp3" data-artist="Guacho" data-thumbnail="assets/img/albums/aprendiz-single.png" data-id="trak-1">
+				<audio preload="metadata" src="assets/audio/aprendiz.mp3" title="Aprendiz"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a class="icon-button shopIcon" href="https://www.youtube.com/guachouy" target="_blank">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://soundcloud.com/guachouy" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://open.spotify.com/artist/2IZAYXQhrYf47pgzTH9ukY" target="_blank">
+							<i class="fa fa-spotify"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Aprendiz - Guacho
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/el_salto.mp3" data-artist="Guacho" data-thumbnail="assets/img/albums/elsalto-single.png" data-id="trak-2">
+				<audio preload="metadata" src="assets/audio/calendario.mp3" title="Calendario"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a class="icon-button shopIcon" href="https://www.youtube.com/guachouy" target="_blank">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://soundcloud.com/guachouy" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://open.spotify.com/artist/2IZAYXQhrYf47pgzTH9ukY" target="_blank">
+							<i class="fa fa-spotify"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							El Salto - Guacho ft. Donfelipe (AFC)
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>			
+			<div class="trak-item" data-audio="assets/audio/shanghai.mp3" data-artist="Guacho" data-thumbnail="assets/img/albums/cover1.png" data-id="trak-1">
+				<audio preload="metadata" src="assets/audio/shanghai.mp3" title="Shanghai"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a class="icon-button shopIcon" href="https://www.youtube.com/guachouy" target="_blank">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://soundcloud.com/guachouy" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://open.spotify.com/artist/2IZAYXQhrYf47pgzTH9ukY" target="_blank">
+							<i class="fa fa-spotify"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Shanghai - Guacho
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/al_paredon.mp3" data-artist="Guacho" data-thumbnail="assets/img/albums/cover1.png" data-id="trak-2">
+				<audio preload="metadata" src="assets/audio/al_paredon.mp3" title="Al paredón"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a class="icon-button shopIcon" href="https://www.youtube.com/guachouy" target="_blank">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://soundcloud.com/guachouy" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://open.spotify.com/artist/2IZAYXQhrYf47pgzTH9ukY" target="_blank">
+							<i class="fa fa-spotify"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Al paredón - Guacho
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/desahogo.mp3" data-artist="Guacho" data-thumbnail="assets/img/albums/cover1.png" data-id="trak-3">
+				<audio preload="metadata" src="assets/audio/desahogo.mp3" title="Desahogo"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a class="icon-button shopIcon" href="https://www.youtube.com/guachouy" target="_blank">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://soundcloud.com/guachouy" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://open.spotify.com/artist/2IZAYXQhrYf47pgzTH9ukY" target="_blank">
+							<i class="fa fa-spotify"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Desahogo - Guacho
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/nada_es_lo_que_parece.mp3" data-artist="Guacho" data-thumbnail="assets/img/albums/cover1.png" data-id="trak-4">
+				<audio preload="metadata" src="assets/audio/nada_es_lo_que_parece.mp3" title="Nada es lo que parece"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a class="icon-button shopIcon" href="https://www.youtube.com/guachouy" target="_blank">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://soundcloud.com/guachouy" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+						<a class="icon-button shopIcon" href="https://open.spotify.com/artist/2IZAYXQhrYf47pgzTH9ukY" target="_blank">
+							<i class="fa fa-spotify"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Nada es lo que parece - Guacho ft. Bruno Andreu (Once Tiros)
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYLIST ================ -->
+	
+	<!-- =============== START TOP HEADER ================ -->
+	<div class="topHeader" >
+		<div class="header">
+			<div class="rightTopHeader">
+				<!-- Open Menu Button -->
+				<a class="open-menu">
+					<!-- Buttons Bars -->
+					<span class="span-1"></span>
+					<span class="span-2"></span>
+					<span class="span-3"></span>
+				</a>
+			</div><!-- end rightTopHeader -->
+		</div><!-- end header -->
+		<!-- Menu Fixed Container -->
+		<div class="menu-fixed-container">
+			<!-- Menu Fixed Centred Container -->
+			<nav id="nav-principal">
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+				<!-- Menu Fixed Primary List -->
+				<ul>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="#home-section">
+							home
+						</a>
+					</li>
+					<li>
+						<a href="#events-section">
+							shows
+						</a>
+					</li>
+					<!-- Menu Fixed Item -->
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="#biography-section">
+							biografía
+						</a>
+					</li>
+					<li>
+						<a href="#gallery-section">
+							galería
+						</a>
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="#videoteca-section">
+							videoteca
+						</a>
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="#content">
+							contacto
+						</a>
+					</li>
+				</ul>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div><!-- end menu-fixed-container -->
+		<!-- =============== STAR LOGO ================ -->
+		<div class="logo-container-top">
+			<a href="index.html"><img src="assets/img/logo/gch_gde.png" alt="logo-guachouy"></a>
+		</div><!-- end logo-container-top -->
+		<!-- =============== END LOGO ================ -->
+	</div><!-- end topHeader -->
+	<!-- =============== END TOP HEADER ================ -->
+
+	<!-- =============== START BREADCRUMB ================ -->
+	<section id="home-section" class="no-mb">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="breadcrumb-fullscreen-parent phone-menu-bg">
+					<div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay" style="background-image: url('assets/img/starHomePage/star.jpg');" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+						<div id="home" style="position: absolute;left: 0;top: 0;">
+							<div class="intro-header">
+								<div class="js-height-full star" style="height: 955px;">
+									<div class="star-pattern-1 js-height-full" style="height: 994px;"></div>
+										<canvas class="cover" width="1920" height="955"></canvas>
+								</div>
+							</div>
+	   					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END BREADCRUMB ================ -->
+	
+	<!-- =============== START EVENTS SECTION-1 ================ -->
+	<!--section id="events-section" style="background-image: url(assets/img/events/home-events-1.jpg);" class="background-properties paddingHomeEvents"-->
+	<section id="events-section" style="background-image: url(assets/img/events/home-events-1.jpg);" class="background-properties padding">
+		<div class="tableEvents">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="sectionTitle paddingBottom">
+							<span class="heading-t3"></span>
+							<h2><a href="#events-section">Shows</a></h2>
+							<span class="heading-b3"></span>
+						</div><!-- end sectionTtile -->
+						<table id="tablaEventos">
+							<tr class="hidden-xs tableEventsTitle">
+								<th class="col-xs-12 col-sm-4 date">FECHA</th>
+								<th class="col-xs-12 col-sm-4 venue">EVENTO</th>
+								<th class="col-xs-12 col-sm-4 location">UBICACIÓN</th>
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a  class="gch-date">Jun 21 de 2019</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>En vivo con No hay nadie</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Inmigrantes, Montevideo, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Oct 27 de 2018</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Durazno Rock</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Parque de la Hispanidad, Durazno, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Oct 7 de 2018</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Cosquin Rock</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Landia - Parque Roosevelt, Canelones, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Jul 27 de 2018</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>En vivo con CalaveraZen y Amigos Inflables</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>BJ Sala, Montevideo, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a  class="gch-date">Jul 14 de 2018</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Fiesta Clandestina con Trotsky Vengaran</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Sala del Museo, Montevideo, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">May 26 de 2018</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Ciclo de bandas Sonamos Todos</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>AFE, Santa Lucia, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">May 18 de 2018</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>En vivo con Compadre</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Inmigrantes, Montevideo, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Abr 14 de 2018</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>En vivo con Crudo</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Solitario Juan, Montevideo, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Ene 18 de 2018</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>En vivo con Nanda</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Escenario Arroyo Solís, Parque del Plata, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Dic 14 de 2017</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Despedida 2K17 en Montevideo</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Solitario Juan, Montevideo, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Dic 02 de 2017</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Bierfest Nueva Helvecia</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Parque El Retiro, Nueva Helvecia, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Nov 25 de 2017</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Mesa Vecinal / Municipio CH</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Parque Batlle, Montevideo, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Nov 18 de 2017</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Festival Rock Uruguayo</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>BJ Sala, Montevideo, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Nov 17 de 2017</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>En vivo con Black Smoke</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Segunda Vuelta, Montevideo, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Ago 19 de 2017</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>En vivo con Vinilo</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>BJ Sala, Montevideo, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">May 26 de 2017</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Apertura Eruca Sativa / Presentación de Barro y Fauna</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>La Trastienda, Montevideo, Uruguay</a></td>
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Abr 08 de 2017</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>En vivo con Muga y Black Smoke</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>CSC, Canelones, Uruguay</a></td>							</tr>							
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Dic 20 de 2016</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Pilsen In The Tanda</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>El Tartamudo, Montevideo, Uruguay</a></td>
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Dic 18 de 2016</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Tigre Rock Fest</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Mercedes, Uruguay</a></td>
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Dic 17 de 2016</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Música de acá pa' acá</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Parque Artigas, Canelones, Uruguay</a></td>
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Dic 03 de 2016</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Bierfest Nueva Helvecia</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Parque El Retiro, Nueva Helvecia, Uruguay</a></td>
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Nov 29 de 2016</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Festival Rock & Pop </a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>La Trastienda, Montevideo, Uruguay</a></td>
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Nov 18 de 2016</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>YESO Viernes en vivo</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>CSC, Canelones, Uruguay</a></td>
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Oct 13 de 2016</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Desenchufado en vivo</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>4Burros, Montevideo, Uruguay</a></td>
+							</tr>
+							<tr class='impar'>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Set 16 de 2016</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>30 años de Día Pop</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Solitario Juan, Montevideo, Uruguay</a></td>
+							</tr>
+							<tr>
+								<td class="col-xs-12 col-sm-4 aqura-date"><a><i class="hidden-xs fa fa-plus"></i></a><a class="gch-date">Ago 08 de 2016</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-location"><a>Desenchufado en vivo</a></td>
+								<td class="col-xs-12 col-sm-4 aqura-city"><a>Nox, Montevideo, Uruguay</a></td>
+							</tr>
+						</table>
+					</div><!-- end col-sm-12 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div><!-- end tableEvents -->
+	</section>
+	<!-- =============== END EVENTS SECTION-1 ================ -->
+	
+		<!-- =============== START TWITTER SECTION ================ -->
+	<!-- =============== agregar link a la bio: biography.html ================ -->
+	<section id="biography-section" class="padding hide-section background-properties" style="background-image: url(assets/img/bio/background_bio.png);">
+		<div class="twitter">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="twitterLogo">
+							<a href="#home-section"><img src="assets/img/logo/gch_gde1.png" alt="logo-guachouy"></a>
+						</div>
+						<p>Quinteto de rock de la ciudad de Canelones, Uruguay, con actividad ininterrumpida desde fines de 2011.</p>
+						<p><button id="ver-mas" class="btn">ver más</button></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- =============== END TWITTER SECTION ================ -->
+	
+	<!-- =============== START BIOGRAPHY SECTION ================ -->
+	<section id="biography-section-full" style="background-image:url(assets/img/bio/background_bio.png);display:none;" class="biography padding background-properties">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Guacho (GCH) es un quinteto de rock uruguayo, oriundo de la ciudad de Canelones.</p>
+					<p>La banda ha sonado en diversos departamentos del país, entre ellos Canelones, Colonia, Florida, Maldonado, Montevideo, Paysandú, San José y Soriano, y en las principales salas de la escena musical metropolitana: Sala Zitarrosa, La Trastienda Montevideo, Aquel Abrazo, BJ, Bluzz Live, Teatro Politeama, Teatro Eslabón, Solitario Juan, El Tartamudo, entre otros importantes escenarios.</p>
+					<p>Ganadores del certamen nacional Movida Joven 2011, organizado por la Intendencia de Montevideo, y ganadores de la campaña In The Tanda Festival, encabezada por la reconocida insignia de cervezas Pilsen, que llevó a la banda a ser imagen publicitaria de la marca en reiteradas ocasiones.</p>
+					<p>En 2015, Guacho editó de modo independiente su primer álbum titulado Entre líneas. Once canciones que contaron con la producción artística de Guacho y Tato Cabrera (Mateo Moreno, KMK, Brown, entre otros), y la participación de Bruno Andreu (Once Tiros), en la canción 'Nada es lo que parece'. El disco fue grabado en Inzen Studios, a cargo de Javier Longhi.</p>
+				</div>
+				<div class="col-sm-6">
+					<p>En 2017 GCH lanzó el material sucesor de Entre líneas en formato trilogía. Estos tres temas fueron grabados en diversos estudios de Montevideo y Buenos Aires, e incluyen dos colaboraciones: una con Dizzy Espeche (exFito Páez y Emmanuel Horvilleur, actual Coti, Mateo Moreno, entre otros), y la segunda con Donfelipe, de la banda uruguaya AFC.</p>
+					<p>La banda ha compartido escenario con destacados artistas nacionales y de la región: Once Tiros, latejapride*, Doberman, Eruca Sativa, Colectivo Nosotros Estamos, xAlfonso (Cuba), Cuatro Pesos de Propina, Trotsky Vengarán, Vinilo, entre otros.</p>
+					<p>Guacho es: Guillermo Cabrera en voz, Franco Serra en batería y coros, Bruno Serra en guitarra, Marcelo Barate en bajo y coros y Ramiro Hernández en guitarra.</p>
+				</div>
+			</div>
+		</div><!-- end container -->
+		<div class="twitter">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<p><a id="ver-menos" href="#biography-section" class="btn">ver menos</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<!-- =============== END BIOGRAPHY SECTION ================ -->
+	
+	
+	<!-- =============== START GALLERY SECTION ================ -->
+	<section id="gallery-section" style="padding-bottom:0; padding-top:0; background: #13181d;" class="hide-section">
+		<div class="gallerySection">
+			<div class="container-fluid" style="padding:0;">
+				<div class="col-sm-12">
+					<!-- Content Container -->
+					<div class="content-container clearfix">
+						<!-- Single Album Container -->
+						<div class="single-photo-album-container">
+							<div class="row">
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<!-- Single Album Image -->
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/gallery/tigrerockfest1.png" alt="guillermo-cantante">
+												<div class="overlay">
+												   <a class="info lightbox" href="assets/img/gallery/tigrerockfest1grande.png"></a>
+												</div>
+											</div>
+										</figcaption>
+										<!-- Single Album View Button -->
+										
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/yesodeacapaaca2.png" alt="bruno-guitarrista">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/yesodeacapaaca2.png"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/tigrerockfest3.png" alt="marcelo-bajista">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/tigrerockfest3.png"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/tigrerockfest2.png" alt="ramiro-guitarrista">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/tigrerockfest2.png"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/yesodeacapaaca3.png" alt="franco-baterista">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/yesodeacapaaca3.png"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/yesodeacapaaca1.png" alt="guillermo-cantante">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/yesodeacapaaca1grande.png"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end container -->
+		</div>
+	</section>
+	<!-- =============== END GALLERY SECTION ================ -->
+	
+	<!-- =============== START VIDEO SECTION ================ -->
+	<section id="videoteca-section" class="videoHome hide-section padding">
+		<div class="container">
+			<div class="row">
+				<div class="sectionTitle">
+					<span class="heading-t3"></span>
+					<h2><a href="#videoteca-section">Videoteca</a></h2>
+					<span class="heading-b3"></span>
+					<p>Conocé todo el material oficial en nuestro canal de <a href="https://www.youtube.com/guachouy" target="_blank">Youtube</a>.</p>
+				</div><!-- end sectionTtile -->
+				<div class="col-sm-4">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jLD28GFDFzA"  allowfullscreen></iframe>
+				</div><!-- end col-sm-4 -->
+				<div class="col-sm-4">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/CqRPxeapfFQ"  allowfullscreen></iframe>
+				</div><!-- end col-sm-4 -->
+				<div class="col-sm-4">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/s3EjdZcT4c8"  allowfullscreen></iframe>
+				</div><!-- end col-sm-4 -->
+			</div>
+		</div>
+	</section>
+	<!-- =============== END VIDEO SECTION ================ -->
+	
+	<!-- =============== START CONTACT ================ -->
+	<!--section class="contactSingle padding background-properties" id="content" style="background-image:url(assets/img/subHeader/header.png);"-->
+	<section class="contactSingle padding background-properties" id="content" style="background-image:url(assets/img/events/home-events-1.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="contactTop">
+						<h2>Información</h2>
+						<h4>Montevideo, Uruguay.</h4>
+						<p>Mandanos tu mensaje a través del formulario, o escribinos a nuestra casilla de correo:
+						</p>
+						<div class="contactInfo">
+							<ul>
+								<li><span>banda@guacho.uy</span></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- end col-sm-4 -->
+				<div class="col-sm-7 col-sm-offset-1">
+					<div class="singleBlogForm">
+						<h2>¡Hablanos acá!</h2>
+						<form id="contactform" action="assets/contact/contact.php" method="post" class="comment-form">
+							<table id="contact-table">
+							<tbody>
+                              <tr>
+								<td class="col-xs-12 col-lg-6"><input id="nombre" name="nombre" type="text" value="" aria-required="true" required="" placeholder="Nombre *"></td>
+								<td class="col-xs-12 col-lg-6"><input id="apellido" name="apellido" type="text" value="" placeholder="Apellido"></td>
+								</tr>
+							<tr>
+								<td class="col-xs-12 col-lg-6"><input id="asunto" name="asunto" type="text" value="" aria-required="true" required="" placeholder="Asunto * "></td>
+								<td class="col-xs-12 col-lg-6"><input id="email" name="email" type="text" value="" aria-required="true" required="" placeholder="Email * "></td>
+							</tr>
+							<tr>
+								<td class="col-xs-12"><textarea id="mensaje" name="mensaje" placeholder="Mensaje * " rows="6" aria-required="true" required=""></textarea></td>
+							</tr>
+							</tbody>
+							</table>
+							<p class="form-submit">
+								<input name="submit" type="submit" id="submit" value="¡DALE!">
+							</p>
+						</form>
+						<div id="response"></div>
+					</div><!-- end contactForm -->
+				</div><!-- end col-sm-7 col-sm-offset-1 -->
+			</div>
+		</div><!-- end container -->
+	</section>
+	<!-- =============== END CONTACT ================ -->
+	
+	
+	<!-- =============== START FOOTER ================ -->
+	<section style="background-color:#eeeeee;" class="hide-section">
+		<div class="footer footerPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="copyFooter">
+							<a href="#">&copy; Guacho 2018</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<nav class="social-icons">
+							<ul class="clearfix">
+								<li><a href="https://www.facebook.com/guachouy" class="icon-button shopIcon" target="_blank"><i class="fa fa-facebook"></i><span></span></a></li>
+								<li><a href="https://www.instagram.com/guachouy/" class="icon-button shopIcon" target="_blank"><i class="fa fa-instagram"></i><span></span></a></li>
+								<li><a href="https://twitter.com/guachouy/" class="icon-button shopIcon" target="_blank"><i class="fa fa-twitter"></i><span></span></a></li>
+								<li><a href="https://www.youtube.com/guachouy" class="icon-button shopIcon" target="_blank"><i class="fa fa-youtube-play"></i><span></span></a></li>
+								<li><a href="https://open.spotify.com/artist/2IZAYXQhrYf47pgzTH9ukY" class="icon-button shopIcon" target="_blank"><i class="fa fa-spotify"></i><span></span></a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-4">
+						<div class="goTop back-to-top" id="back-to-top">
+							<i class="fa fa-angle-up"></i>
+							<a href="#">Volver</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END FOOTER ================ -->
+
+	<!-- ================================================== -->
+	<!-- =============== START JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+	<!--script src="assets/js/jquery.js"></script-->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+	<script src="assets/js/jPlayer.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+	
+	<!--[if lte IE 9 ]>
+		<script src="assets/js/placeholder.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	<!-- ================================================== -->
+	<!-- =============== END JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+</body>
+</html>
